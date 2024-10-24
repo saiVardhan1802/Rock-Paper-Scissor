@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(140, 196, 97, 1);
+}
+
+.score-card {
+    width: 55vw;
+    height: 17vh;
+    position: relative;
+    left: 20vw;
+    top: 8vh;
+    border: 0.125rem solid white;
+    border-radius: 1.5rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 2.5rem;
+    letter-spacing: 0.1em;
+    color: white;
+    width: 33%;
+    position: relative;
+    left: 2%;
+    top: 12%;
+}
+
+.score {
+    float: right;
+    display: flex;
+    gap: 10%;
+    height: 90%;
+    width: 40%;
+    position: relative;
+    bottom: 67%;
+    left: 2%
+}
+
+.score div {
+    height: 90%;
+    width: 40%;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.score-title {
+    font-family: Roboto;
+    color: rgba(101, 101, 101, 1);
+    line-height: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 4%;
+    cursor: default;
+}
+
+.score-display {
+    font-family: Roboto;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-align: center;
+    position: relative;
+    top: 9%;
+    cursor: default;
+}
+
+.rps {
+    width: 40vw;
+    height: 60vh;
+    position: relative;
+    top: 13vh;
+    left: 28vw;
+}
+
+.line {
+    width: 24vw;
+    height: 3vh;
+    gap: 0px;
+    background-color: rgba(0, 0, 0, 0.64);
+}
+
+.one {
+    position: relative;
+    left: 8vw;
+    top: 12vh;
+}
+
+.two {
+    transform: rotate(60deg);
+    position: relative;
+    top: 27.9vh;
+    left: 2.6vw;
+}
+
+.three {
+    transform: rotate(-60deg);
+    position: relative;
+    left: 13.6vw;
+    top: 24.6vh;
+}
+
+.circle {
+    width: 9.71vw;
+    height: 18.69vh;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.paper img {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 15%;
+    top: 12%;
+}
+
+.rock img {
+    width: 77%;
+    height: 55%;
+    position: relative;
+    left: 10%;
+    top: 17%;
+}
+
+.scissors img {
+    width: 50%;
+    height: 60%;
+    position: relative;
+    left: 27%;
+    top: 17%;
+}
+
+.paper {
+    border: 1.5rem solid rgba(255, 169, 67, 1);
+    position: relative;
+    left: 15vw;
+    top: 27vh;
+}
+
+.rock {
+    border: 1.5rem solid rgba(0, 116, 182, 1);
+    position: relative;
+    bottom: 23vh;
+    left: 5vw;
+}
+
+.scissors {
+    border: 1.5rem solid rgba(189, 0, 255, 1);
+    position: relative;
+    left: 25vw;
+    bottom: 42vh;
+}
+
+.rules {
+    height: 45vh;
+    width: 20vw;
+    background: rgba(0, 68, 41, 1);
+    border: 0.5rem solid rgba(255, 255, 255, 1);
+    border-radius: 0.75rem;
+    float: right;
+    position: relative;
+    bottom: 40vh;
+    right: 3vw;
+}
+
+.game {
+    font-family: Roboto;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-top: 4vh;
+}
+
+.list {
+    height: 80%;
+    width: 80%;
+    position: relative;
+    top: 9%;
+    left: 12%;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li::before {
+    content: "\25A0";
+    color: yellow;
+    font-size: 1em;
+    position: absolute;
+    left: -1.25rem;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vh;
+}
+
+li p {
+    margin-left: 1vw;
+    font-family: roboto;
+    font-size: 1rem;
+    color: white;
+}
+
+.close {
+    width: 18%;
+    height: 15.4%;
+    border-radius: 50%;
+    text-align: center;
+    border: 0.3rem solid white;
+    background: rgba(255, 0, 0, 1);
+    position: relative;
+    left: 17.6vw;
+    bottom: 45.5vh;
+    cursor: pointer;
+}
+
+.close p {
+    font-family: Dangrek;
+    color: white;
+    font-size: 2.75rem;
+    font-weight: 400;
+    line-height: 5rem;
+    position: relative;
+    bottom: 17%;
+    cursor: pointer;
+}
+
+.rules-box {
+    width: 8.1vw;
+    height: 5.2vh;
+    border-radius: 0.75rem;
+    border: 0.25rem solid white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 89vw;
+    top: 14vh;
+    cursor: pointer;
+    
+}
+
+.rules-box p {
+    margin-top: 6%;
+    color: white;
+    cursor: pointer;
+}
+
+.next-box {
+    width: 8.1vw;
+    height: 5.2vh;
+    border-radius: 0.75rem;
+    border: 0.25rem solid white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 89vw;
+    bottom: 0.25vh;
+    cursor: pointer;
+}
+
+.next-box p {
+    margin-top: 6%;
+    color: white;
+    cursor: pointer;
+}
+/* winning condition */
+
+
+.circle-js {
+    width: 12.39vw;
+    height: 23.87vh;
+    border-radius: 50%;
+    background-color: white;
+    border: 1.25rem solid rgba(255, 169, 67, 1);
+}
+
+.won {
+    animation: ripple 1.25s ease-out forwards;
+}
+
+@keyframes ripple {
+    0% {
+      box-shadow: 
+        0 0 0 0px rgb(5, 155, 5, 0.8),
+        0 0 0 0px rgba(32, 189, 32, 0.8),
+        0 0 0 0px rgb(5, 155, 5, 0.2);
+    }
+    33% {
+      box-shadow: 
+        0 0 0 2.5rem rgb(5, 155, 5, 0.8),
+        0 0 0 0px rgba(32, 189, 32, 0.8),
+        0 0 0 0px rgb(5, 155, 5, 0.2);
+    }
+    66% {
+      box-shadow: 
+        0 0 0 2.5rem rgb(5, 155, 5, 0.8),
+        0 0 0 4.375rem rgba(32, 189, 32, 0.8),
+        0 0 0 0px rgb(5, 155, 5, 0.2);
+    }
+    100% {
+      box-shadow: 
+        0 0 0 2.5rem rgb(5, 155, 5, 0.8),
+        0 0 0 4.375rem rgba(32, 189, 32, 0.8),
+        0 0 0 6.6rem rgb(5, 155, 5, 0.2);
+    }
+}
+
+.circle-js p {
+    position: relative;
+    bottom: 8vh;
+    left: 1.25vw;
+    z-index: 1;
+    font-family: Roboto;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: 0.1em;
+}
+
+.show-result {
+    position: relative;
+    top: 5vh;
+    height: 25vh;
+    width: 14vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    text-align: center;
+    font-weight: 800;
+    font-family: Roboto;
+}
+
+.show-result p {
+    letter-spacing: 0.1em;
+}
+
+button {
+    width: 10.36vw;
+    height: 4.98vh;
+    border-radius: 0.57rem;
+    opacity: 0px;
+    border: none;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.125rem;
+    position: relative;
+    left: 1.75vw;
+    top: 2vh;
+    background: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+button p {
+    letter-spacing: 0.1em;
+    color: rgba(107, 107, 107, 1);
+    cursor: pointer;
+}
+
+.user-border img{
+    width: 39%;
+    height: 47%;
+    position: relative;
+    left: 32%;
+    top: 13%;
+}
+
+.display-winner img {
+    position: relative;
+    left: 43vw;
+    top: 30vh;
+    transform: scale(1.3);
+}
+
+.set-1 {
+    color: rgba(217, 217, 217, 0.83);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 30vw;
+    bottom: 19vh;
+}
+
+.set-1 .star-3 {
+    font-size: 10rem;
+}
+
+.set-1 .star-2 {
+    font-size: 6rem;
+    position: relative;
+    top: 8vh;
+    left: 4.5vw;
+}
+
+.set-1 .star-1 {
+    font-size: 3rem;
+    position: relative;
+    left: 7.5vw;
+    top: 8vh;
+}
+
+.set-1 .star-4 {
+    font-size: 3rem;
+    position: relative;
+    left: 6vw;
+}
+
+.set-2 {
+    color: rgba(217, 217, 217, 0.83);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 56vw;
+    bottom: 77vh;
+}
+
+.set-2 .star-4 {
+    font-size: 11rem;
+}
+
+.set-2 .star-2 {
+    font-size: 9rem;
+    position: relative;
+    right: 4vw;
+    top: 4vh;
+}
+
+.set-2 .star-1 {
+    font-size: 3rem;
+    position: relative;
+    top: 20vh;
+    right: 11vw;
+}
+
+.set-2 .star-3 {
+    font-size: 3rem;
+    position: relative;
+    left: 5vw;
+    bottom: 1.5vh;
+}
+
+.hurray {
+    position: relative;
+    bottom: 72vh;
+    text-align: center;
+    
+    color: white;
+}
+
+.hurray p {
+    letter-spacing: 0.1em;
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+.hurray button {
+    margin-top: 6vh;
+    margin-right: 5vw;
+    color: rgba(107, 107, 107, 1);
+    transform: scale(1.1);
+}
+
+.rules-box2 {
+    width: 8.1vw;
+    height: 5.2vh;
+    border-radius: 0.75rem;
+    border: 0.25rem solid white;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    position: relative;
+    left: 89vw;
+    bottom: 69vh;
+    cursor: pointer;
+    
+}
+
+.rules-box2 p {
+    margin-top: 6%;
+    color: white;
+    cursor: pointer;
+}
