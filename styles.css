@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+@media (max-width: 1800px) {
+    html {
+        font-size: 12px;
+    }   
+}
+
 body {
     background: rgba(140, 196, 97, 1);
 }
