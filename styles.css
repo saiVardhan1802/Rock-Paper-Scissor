@@ -473,7 +473,7 @@ button p {
 
 .hurray {
     position: relative;
-    bottom: 72vh;
+    bottom: 60vh;
     text-align: center;
     
     color: white;
@@ -505,7 +505,7 @@ button p {
     letter-spacing: 0.1em;
     position: relative;
     left: 89vw;
-    bottom: 69vh;
+    bottom: 60vh;
     cursor: pointer;
     
 }
